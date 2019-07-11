@@ -1,9 +1,9 @@
 const muliplier= 100;
-function rand(){
-    const decimal = Math.random();
+function rand (word) {
+    const decimal = Math.random(); // between 0 and 1
     const times10 = decimal * muliplier;
     const final = Math.floor(times10);
-    return final
+    return final + word; // my fucntion is gonna have a output 
 }
 
-console.log(rand());
+console.log(rand(" times"));
