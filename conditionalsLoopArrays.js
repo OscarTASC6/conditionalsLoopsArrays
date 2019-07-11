@@ -7,7 +7,8 @@ const catchAttempt = Math.random()
 if(catchAttempt < catchChance){
     console.log("Caught It!");
 }else if (catchAttempt >= catchChance){
-    console.log("Aargh! Almost had it!");
+    console.log("Aargh! Almost had it!")
+    roster.push("Charizard");
 }  
 console.log(roster.length)
 if(roster.length < 6){
@@ -16,12 +17,15 @@ if(roster.length < 6){
 const elements = ["plant","fire","water"];
 let enemyAttackType = elements[Math.floor(Math.random()*elements.length)];
 
-if (enemyAttackType = "plant"){
+if (enemyAttackType === "plant"){
     console.log ("It's super effective!");
-}else if (enemyAttackType = "fire"){
+}else if (enemyAttackType === "fire"){
     console.log ("It's not very effective!");
 }
-else if (enemyAttackType = "water")
- console.log ("Nothing special happened!")
+else if (enemyAttackType === "water"){
+ console.log ("Nothing special happened!");
+}
+else console.log ("Error, this isn't supposed to be seen!")
+console.log(roster)
 //Else console.log "Error, this isn't supposed to be seen!"
 //sconsole.log(roster);    
